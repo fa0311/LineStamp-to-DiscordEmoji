@@ -1,6 +1,6 @@
 # LineStamp-to-DiscordEmoji
 
-LINE スタンプを discord の絵文字として追加させる discord bot です<br>
+LINE スタンプ/絵文字を discord の絵文字として追加させる discord bot です<br>
 <br>
 
 ## Usage
