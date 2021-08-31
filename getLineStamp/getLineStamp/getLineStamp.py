@@ -10,9 +10,9 @@ class getLineStamp:
             raise Exception('Request Error')
         # 男は黙って正規表現
         reg_json = r'<script type="application/ld\+json">\s([\s\S]*?)\s</script>'
-        reg_img = r'style="background-image:url\((.*?);compress=true\);"></span>'
+        reg_img = r'<span class="mdCMN09Image" style="background-image:url\((.*?)(;compress=true)?\);"></span>'
         content = json.loads(re.findall(reg_json, response.text)[0])
-        self.stamp = re.findall(reg_img, response.text)
+        self.stamp = [attribute[0] for attribute in re.findall(reg_img, response.text)]
         self.content =  getLineStampData(
             content["@context"],
             content["@type"],

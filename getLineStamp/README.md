@@ -1,6 +1,6 @@
 # getLineStamp
 
-LINE スタンプの情報を取得するライブラリです<br>
+LINE スタンプ/絵文字の情報を取得するライブラリです<br>
 <br>
 
 ## Usage
